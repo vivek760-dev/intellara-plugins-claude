@@ -9,14 +9,6 @@
   },
   "plugins": [
     {
-      "name" : "hello",
-      "source" : "./plugins/hello",
-      "description" : "a warm greeting plugin",
-      "version" : "1.0.0",
-      "category" : "greeting",
-      "keywords" : ["greet test"]
-    },
-    {
       "name" : "coding-std",
       "source" : "./plugins/coding-std",
       "description" : "tandard coding practices for Intellara projects",
