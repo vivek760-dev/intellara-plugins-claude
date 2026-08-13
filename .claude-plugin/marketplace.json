@@ -1,0 +1,31 @@
+{
+  "name": "intellara-plugins-claude",
+  "owner" : {
+    "name": "Vivek",
+    "email": "vivek.menon@intellara.ai"
+  },
+  "metadata" : {
+    "description" : "Marketplace for enterprise plugins at Intellara"
+  },
+  "plugins": [
+    {
+      "name" : "hello",
+      "source" : "./plugins/hello",
+      "description" : "a warm greeting plugin",
+      "version" : "1.0.0",
+      "category" : "greeting",
+      "keywords" : ["greet test"]
+    },
+    {
+      "name" : "coding-std",
+      "source" : "./plugins/coding-std",
+      "description" : "tandard coding practices for Intellara projects",
+      "version" : "1.0.0",
+      "category" : "standards",
+      "keywords" : ["coding standards"]
+    }
+
+  ]
+}
+
+

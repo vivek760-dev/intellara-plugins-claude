@@ -1,0 +1,9 @@
+{
+    "name": "coding-std",
+    "description": "Standard coding practices for Intellara projects",
+    "version": "1.0.0",
+    "author": {
+        "name": "Vivek",
+        "email": "vivek.menon@intellara.ai"
+    }
+}
