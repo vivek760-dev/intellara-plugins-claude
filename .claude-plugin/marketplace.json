@@ -12,7 +12,7 @@
       "name" : "coding-std",
       "source" : "./plugins/coding-std",
       "description" : "tandard coding practices for Intellara projects",
-      "version" : "1.0.0",
+      "version" : "1.0.1",
       "category" : "standards",
       "keywords" : ["coding","standards"]
     },
@@ -20,7 +20,7 @@
       "name" : "dependency-auditor",
       "source" : "./plugins/audit/dependency_auditor",
       "description" : "Audits project dependencies for outdated, vulnerable, or risky packages",
-      "version" : "1.0.0",
+      "version" : "1.0.1",
       "category" : "security",
       "keywords" : ["dependencies", "audit", "vulnerabilities"]
     }

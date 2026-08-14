@@ -1,7 +1,7 @@
 {
   "name": "dependency-auditor",
   "description": "Audits project dependencies for outdated, vulnerable, or risky packages",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "author": {
     "name": "Vivek",
     "email": "vivek.menon@intellara.ai"
