@@ -14,7 +14,15 @@
       "description" : "tandard coding practices for Intellara projects",
       "version" : "1.0.0",
       "category" : "standards",
-      "keywords" : ["coding standards"]
+      "keywords" : ["coding","standards"]
+    },
+    {
+      "name" : "dependency-auditor",
+      "source" : "./plugins/audit/dependency_auditor",
+      "description" : "Audits project dependencies for outdated, vulnerable, or risky packages",
+      "version" : "1.0.0",
+      "category" : "security",
+      "keywords" : ["dependencies", "audit", "vulnerabilities"]
     }
 
   ]
