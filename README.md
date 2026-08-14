@@ -7,6 +7,7 @@ A marketplace of Claude Code plugins for enterprise projects at Intellara.
 | Plugin | Description |
 |---|---|
 | `coding-std` | Standard coding practices for Intellara projects |
+| `dependency-auditor` | Audits project dependencies for outdated, vulnerable, or risky packages |
 
 ## Installation
 
@@ -33,6 +34,18 @@ Inside a Claude Code session, run:
 ```
 
 This opens the plugin manager where you can see installed plugins and enable/disable them.
+
+## Using Agent-Based Plugins
+
+Some plugins (like `dependency-auditor`) ship an **agent**, not a skill or slash
+command. Agents can't be invoked with `/plugin-name` — that will return
+`No commands match`. Instead, invoke them with a natural-language request, e.g.:
+
+```
+use the dependency-auditor agent to check this project's dependencies
+```
+
+Claude Code will route the request to the agent as a subagent task.
 
 ## Local Development
 
