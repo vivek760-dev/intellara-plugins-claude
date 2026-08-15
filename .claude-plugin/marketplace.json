@@ -11,7 +11,7 @@
     {
       "name" : "coding-std",
       "source" : "./plugins/coding-std",
-      "description" : "tandard coding practices for Intellara projects",
+      "description" : "Standard coding practices for Intellara projects",
       "version" : "1.0.1",
       "category" : "standards",
       "keywords" : ["coding","standards"]
@@ -23,8 +23,15 @@
       "version" : "1.0.1",
       "category" : "security",
       "keywords" : ["dependencies", "audit", "vulnerabilities"]
+    },
+    {
+      "name" : "agent-scaffold",
+      "source" : "./plugins/agent-scaffold",
+      "description" : "Scaffolds new agents and tools inside an existing Intellara agentic project, with the orchestrator wiring done correctly",
+      "version" : "1.0.0",
+      "category" : "scaffolding",
+      "keywords" : ["agents", "tools", "scaffold", "agentic"]
     }
-
   ]
 }
 

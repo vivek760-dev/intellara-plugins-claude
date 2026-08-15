@@ -1,0 +1,9 @@
+{
+  "name": "agent-scaffold",
+  "description": "Scaffolds new agents and tools inside an existing Intellara agentic project, with the orchestrator wiring done correctly",
+  "version": "1.0.0",
+  "author": {
+    "name": "Vivek",
+    "email": "vivek.menon@intellara.ai"
+  }
+}

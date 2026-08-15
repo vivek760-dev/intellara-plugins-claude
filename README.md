@@ -8,6 +8,7 @@ A marketplace of Claude Code plugins for enterprise projects at Intellara.
 |---|---|
 | `coding-std` | Standard coding practices for Intellara projects |
 | `dependency-auditor` | Audits project dependencies for outdated, vulnerable, or risky packages |
+| `agent-scaffold` | Scaffolds new agents and tools inside an existing agentic project, with the orchestrator wiring done correctly |
 
 ## Installation
 
