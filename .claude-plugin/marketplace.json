@@ -1,11 +1,11 @@
 {
   "name": "intellara-plugins-claude",
-  "owner" : {
+  "owner": {
     "name": "Vivek",
-    "email": "vivek.menon@intellara.ai"
+    "email": "vivek.menon@intellaraforge.ai"
   },
-  "metadata" : {
-    "description" : "Marketplace for enterprise plugins at Intellara"
+  "metadata": {
+    "description": "Marketplace for enterprise plugins at Intellara"
   },
   "plugins": [
     {
@@ -31,8 +31,14 @@
       "version" : "1.0.0",
       "category" : "scaffolding",
       "keywords" : ["agents", "tools", "scaffold", "agentic"]
+    },
+    {
+      "name" : "dev",
+      "source" : "./plugins/dev",
+      "description" : "Comprehensive feature development workflow with specialized agents for codebase exploration, architecture design, and quality review, plus terminal flowchart rendering",
+      "version" : "1.1.0",
+      "category" : "development",
+      "keywords" : ["plan", "dev", "chart", "feature", "flowchart", "diagram"]
     }
   ]
 }
-
-

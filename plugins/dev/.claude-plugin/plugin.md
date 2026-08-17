@@ -1,0 +1,9 @@
+{
+  "name": "feature-dev",
+  "version": "1.1.0",
+  "description": "Comprehensive feature development workflow with specialized agents for codebase exploration, architecture design, and quality review, plus terminal flowchart rendering",
+  "author": {
+    "name": "Vivek",
+    "email": "vivek.menon@intellara.ai"
+  }
+}

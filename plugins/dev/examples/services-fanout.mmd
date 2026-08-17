@@ -1,0 +1,11 @@
+%% Wide fan-out and fan-in - the layout case most likely to look cramped.
+flowchart TD
+    API[API Gateway] --> Auth[Auth service]
+    Auth --> Users[Users svc]
+    Auth --> Orders[Orders svc]
+    Auth --> Billing[Billing svc]
+    Auth --> Search[Search svc]
+    Users --> DB[(Postgres)]
+    Orders --> DB
+    Billing --> DB
+    Search --> ES[(Elastic)]

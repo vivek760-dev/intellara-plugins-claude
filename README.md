@@ -9,6 +9,7 @@ A marketplace of Claude Code plugins for enterprise projects at Intellara.
 | `coding-std` | Standard coding practices for Intellara projects |
 | `dependency-auditor` | Audits project dependencies for outdated, vulnerable, or risky packages |
 | `agent-scaffold` | Scaffolds new agents and tools inside an existing agentic project, with the orchestrator wiring done correctly |
+| `dev` | Structured feature development workflow, with specialised agents for codebase exploration, architecture design and quality review, plus terminal flowchart rendering |
 
 ## Installation
 
@@ -47,6 +48,32 @@ use the dependency-auditor agent to check this project's dependencies
 ```
 
 Claude Code will route the request to the agent as a subagent task.
+
+## Building Features
+
+`dev` ships two slash commands:
+
+```
+/feature-dev add tenant-scoped rate limiting to the agent API
+/flowchart the request flow through the auth middleware
+```
+
+`/feature-dev` runs a seven-phase workflow: it explores the codebase with parallel
+`code-explorer` agents, asks the clarifying questions the request left open, designs
+several architectures with competing trade-offs through `code-architect` agents, and
+reviews the result with `code-reviewer` agents. It waits for your approval before
+writing any code.
+
+`/flowchart` draws a flowchart of code, architecture or a described process as ASCII art
+in the terminal. It writes Mermaid source and renders it with a bundled dependency-free
+Node script, so there is nothing to install — you get the diagram in your terminal plus
+the Mermaid source to paste into GitHub or an IDE preview. `/feature-dev` uses it
+automatically to diagram existing control flow and proposed architectures.
+
+The renderer is deliberately limited: top-down layout only, no `subgraph` or styling,
+cycles are listed rather than drawn, and roughly fifteen nodes is the practical ceiling
+before a diagram outgrows a terminal. See [plugins/dev/README.md](plugins/dev/README.md)
+for the full supported Mermaid subset.
 
 ## Local Development
 

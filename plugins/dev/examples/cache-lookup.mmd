@@ -1,0 +1,8 @@
+%% Branching, an edge that skips a layer, and a datastore.
+flowchart TD
+    A[User request] --> B{Cached?}
+    B -->|yes| C[Return cached]
+    B -->|no| D[Query database]
+    D --> E[Transform result]
+    E --> F[(Write cache)]
+    E --> C

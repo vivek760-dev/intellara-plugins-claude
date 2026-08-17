@@ -1,0 +1,12 @@
+%% Every shape, a multi-line label, and a cycle (R loops back to P).
+flowchart TD
+    Start((Start)) --> P[Parse input]
+    P --> V{Valid?}
+    V -->|no| E[Report error<br/>and stop]
+    V -->|yes| T[[Transform]]
+    T --> W[Write output]
+    T --> L[Log metrics]
+    W --> R[Retry queue]
+    R --> P
+    L --> Done((Done))
+    W --> Done
